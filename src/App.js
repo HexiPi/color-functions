@@ -1,23 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import * as ColorFunctions from './ColorFunctions';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Monochromatic Swatch
+        {ColorFunctions.renderColorSwatch(ColorFunctions.getMonochromeColors)}
+        <br />
+        Complement Color Swatch
+        {ColorFunctions.renderColorSwatch(ColorFunctions.getComplementColor)}
+        <br />
+        Split Complement Colors Swatch
+        {ColorFunctions.renderColorSwatch(ColorFunctions.getSplitComplementColor)}
+        <br />
+        Triadic Colors Swatch
+        {ColorFunctions.renderColorSwatch(ColorFunctions.getTriadicColor)}
+        <br />
+        Tetradic Colors Swatch
+        {ColorFunctions.renderColorSwatch(ColorFunctions.getTetradicColor)}
+        <br />
+        Analogous Colors Swatch
+        {ColorFunctions.renderColorSwatch(ColorFunctions.getAnalogousColor)}
       </header>
     </div>
   );
