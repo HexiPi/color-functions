@@ -1,5 +1,5 @@
 import React from 'react';
-import * as ColorFunctions from './ColorFunctions';
+import * as ColorFunctions from './ColorFunctions.tsx';
 import './App.css';
 
 function App() {

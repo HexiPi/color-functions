@@ -3,7 +3,11 @@ var path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './src/ColorFunctions.js',
+    devtool: 'source-map',
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
+    },
+    entry: './src/ColorFunctions.tsx',
     output: {
         path: path.resolve('lib'),
         filename: 'ColorFunctions.js',
@@ -11,6 +15,16 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                exclude: /(node_modules)/,
+                use: 'ts-loader'
+            },
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                loader: 'source-map-loader'
+            },
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
