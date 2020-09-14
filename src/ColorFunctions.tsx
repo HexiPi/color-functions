@@ -40,6 +40,11 @@ export const convertHexColorToRGB = (hexColor: string) => {
     return getRGBString(r, g, b);
 };
 
+export const convertRGBToHexColor = (rgbColor: string) => {
+    const [r, g, b] = parseRGB(Color(rgbColor));
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
+
 export const getContrastYIQ = (rgbColor: string) => {
     const [r, g, b] = parseRGB(Color(rgbColor));
     const yiq = ((r*299) + (g*587) + (b*114)) / 1000;

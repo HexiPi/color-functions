@@ -6,8 +6,22 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "jsx": "react",
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "module": "commonjs"
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
     "src"
