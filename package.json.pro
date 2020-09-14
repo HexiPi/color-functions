@@ -31,7 +31,6 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
