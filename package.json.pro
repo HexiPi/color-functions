@@ -42,8 +42,8 @@
     "react-dom": "^16.13.1",
     "source-map-loader": "^1.0.1",
     "ts-loader": "^8.0.1",
-    "typescript": "^3.9.7",
-    "webpack": "^4.43.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "files": [
