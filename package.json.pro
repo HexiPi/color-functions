@@ -1,6 +1,6 @@
 {
   "name": "color-functions-hexipi",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "./lib/ColorFunctions.js",
   "types": "./lib/ColorFunctions.d.ts",
   "dependencies": {
